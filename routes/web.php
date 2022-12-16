@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', function () {
+    $data = [
+        'page_title' => 'Welcome to DC Comics',
+        'page_intro' => 'Comics lorem ipsum dolor'
+    ];
+    return view('welcome', $data);
+})->name('home');
