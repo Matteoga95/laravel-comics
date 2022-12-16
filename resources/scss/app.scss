@@ -1,1 +1,65 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+
+footer {
+    background-color: #303030;
+    color: white;
+    z-index: 99;
+}
+
+.links {
+    background-image: url("../assets/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+
+    p {
+        color: grey;
+        line-height: 10px;
+    }
+
+    img {
+        position: absolute;
+        top: -80px;
+        right: 10%;
+        width: 30%;
+
+    }
+
+    .comics {
+        background-color: black;
+    }
+}
+
+
+#sezioni {
+    background-color: #0282f9;
+    padding: 3rem;
+    margin-top: -1rem;
+
+    img {
+        width: 20%;
+
+    }
+}
+
+
+#jumbotron {
+    background-image: url("../assets/img/jumbotron.jpg");
+    height: 500px;
+    background-size: cover;
+
+}
+
+.current-series {
+    position: absolute;
+    color: white;
+    top: 470px;
+    left: auto;
+    background-color: #0282f9;
+}
+
+.container {
+    position: relative;
+}
