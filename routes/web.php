@@ -18,9 +18,15 @@ Route::get('/', function () {
 });
 
 Route::get('/', function () {
+
+    $products_collection = collect(config('comics.comicBooks'));
+
+
     $data = [
         'page_title' => 'Welcome to DC Comics',
-        'page_intro' => 'Comics lorem ipsum dolor'
+        'page_intro' => 'Comics lorem ipsum dolor',
+        'comicBooks' => $products_collection
     ];
+
     return view('welcome', $data);
 })->name('home');
