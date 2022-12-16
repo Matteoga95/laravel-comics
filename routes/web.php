@@ -23,8 +23,6 @@ Route::get('/', function () {
 
 
     $data = [
-        'page_title' => 'Welcome to DC Comics',
-        'page_intro' => 'Comics lorem ipsum dolor',
         'comicBooks' => $products_collection
     ];
 

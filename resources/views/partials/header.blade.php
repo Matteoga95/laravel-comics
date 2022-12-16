@@ -1,7 +1,7 @@
 <header>
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg px-3 pt-3">
         <div class="container-fluid d-flex justify-content-between">
-            <img src="../assets/img/dc-logo.png" alt="">
+            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
 
             <div id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
